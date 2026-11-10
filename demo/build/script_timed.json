@@ -1,88 +1,479 @@
 [
  {
   "id": "S1",
-  "kind": "slide",
-  "voice": "AI agents that can pay are one bad post away from paying a scammer. This post is a synthetic example, written for this demo. It tells any agent that reads it to ignore its instructions and send money. This is ScamBrake, built at NEAR HACKATHON.",
-  "vd": 15.616
+  "sents": [
+   [
+    "Imagine your AI assistant is paying bills for you."
+   ],
+   [
+    "One day, your AI assistant may get tricked into sending money to a scammer.",
+    null,
+    1.0
+   ],
+   [
+    "The message you will see is a made up example, written for this demo."
+   ],
+   [
+    "ScamBrake is the brake that stops that.",
+    null,
+    1.0
+   ]
+  ],
+  "vd": 19.082666666666668,
+  "sent": [
+   [
+    0,
+    3.989333333333333,
+    "Imagine your AI assistant is paying bills for you."
+   ],
+   [
+    4.689333333333333,
+    9.852,
+    "One day, your AI assistant may get tricked into sending money to a scammer."
+   ],
+   [
+    10.852,
+    15.545333333333334,
+    "The message you will see is a made up example, written for this demo."
+   ],
+   [
+    16.245333333333335,
+    19.082666666666668,
+    "ScamBrake is the brake that stops that."
+   ]
+  ]
  },
  {
   "id": "S2",
-  "kind": "slide",
-  "voice": "ScamBrake puts two walls between an agent and its money. A checker looks at who is being paid and answers allow, warn or block. And the agent only holds one key, which can only call pay on a guard contract that enforces the limits.",
-  "vd": 14.570666666666666
+  "sents": [
+   [
+    "ScamBrake puts two walls between your assistant and your money."
+   ],
+   [
+    "First, a checker looks at who is being paid, and answers allow, warn or block."
+   ],
+   [
+    "Second, the assistant holds only one key, and that key can only call pay, within strict limits."
+   ]
+  ],
+  "vd": 17.613333333333333,
+  "sent": [
+   [
+    0,
+    4.181333333333333,
+    "ScamBrake puts two walls between your assistant and your money."
+   ],
+   [
+    4.881333333333333,
+    10.428,
+    "First, a checker looks at who is being paid, and answers allow, warn or block."
+   ],
+   [
+    11.128,
+    17.613333333333333,
+    "Second, the assistant holds only one key, and that key can only call pay, within strict limits."
+   ]
+  ]
  },
  {
   "id": "E1",
-  "kind": "slide",
-  "voice": "Here is the guard account on the testnet explorer. The agent's key is function call only, and the only method is pay. The other key is the owner's. The contract caps a payment at one NEAR, two NEAR a day, and a tenth of a NEAR to anyone not on the allowlist.",
-  "vd": 15.786666666666667
+  "sents": [
+   [
+    "Here is the guard account on the NEAR testnet explorer."
+   ],
+   [
+    "The assistant's key can only call pay."
+   ],
+   [
+    "The other key belongs to the owner, not the assistant."
+   ],
+   [
+    "Each payment is capped at one NEAR, and two NEAR a day."
+   ]
+  ],
+  "vd": 16.030666666666665,
+  "sent": [
+   [
+    0,
+    3.8826666666666667,
+    "Here is the guard account on the NEAR testnet explorer."
+   ],
+   [
+    4.582666666666666,
+    7.548,
+    "The assistant's key can only call pay."
+   ],
+   [
+    8.248,
+    11.767999999999999,
+    "The other key belongs to the owner, not the assistant."
+   ],
+   [
+    12.467999999999998,
+    16.030666666666665,
+    "Each payment is capped at one NEAR, and two NEAR a day."
+   ]
+  ]
  },
  {
   "id": "T1",
-  "kind": "slide",
-  "voice": "Now a real run on testnet, with dot slash demo dot sh live. A normal invoice first. The vendor is on the allowlist and has history, so the checker says allow, and five cents of test NEAR goes out.",
-  "say": "Now a real run on testnet, with dot slash demo dot sh live. A normal invoice first. The vendor is on the allowlist and has history, so the checker says allow, and zero point zero five test NEAR goes out.",
-  "vd": 13.76
+  "sents": [
+   [
+    "Now a real run on testnet, using dot slash demo dot sh live.",
+    "Now a real run on testnet, using dot slash demo dot sh live."
+   ],
+   [
+    "First, a normal invoice."
+   ],
+   [
+    "The vendor is on the allowlist, so the checker says allow, and the payment goes out.",
+    null,
+    1.4
+   ]
+  ],
+  "vd": 14.2,
+  "sent": [
+   [
+    0,
+    5.269333333333333,
+    "Now a real run on testnet, using dot slash demo dot sh live."
+   ],
+   [
+    5.969333333333333,
+    8.251999999999999,
+    "First, a normal invoice."
+   ],
+   [
+    8.951999999999998,
+    14.2,
+    "The vendor is on the allowlist, so the checker says allow, and the payment goes out."
+   ]
+  ]
  },
  {
   "id": "E2",
-  "kind": "slide",
-  "voice": "And there it is on NearBlocks. Status success, a call to pay on the guard contract.",
-  "vd": 5.418666666666667
+  "sents": [
+   [
+    "And there it is on NearBlocks."
+   ],
+   [
+    "Status: success.",
+    null,
+    0.9
+   ]
+  ],
+  "vd": 4.881333333333333,
+  "sent": [
+   [
+    0,
+    2.517333333333333,
+    "And there it is on NearBlocks."
+   ],
+   [
+    3.2173333333333334,
+    4.881333333333333,
+    "Status: success."
+   ]
+  ]
  },
  {
   "id": "T2",
-  "kind": "slide",
-  "voice": "Next, an account the checker knows little about. In our first live run today, this newcomer got a warning, and with no human approval the answer was no. By this run it had a payment history, so the risk dropped and a small payment was allowed.",
-  "vd": 14.442666666666666
+  "sents": [
+   [
+    "Next, an account the checker knows little about."
+   ],
+   [
+    "In our first live run today, it got a warning, and with no human approval, the answer was no."
+   ],
+   [
+    "By this run, it had a payment history, so a small payment was allowed.",
+    null,
+    1.0
+   ]
+  ],
+  "vd": 15.927999999999999,
+  "sent": [
+   [
+    0,
+    3.477333333333333,
+    "Next, an account the checker knows little about."
+   ],
+   [
+    4.177333333333333,
+    10.598666666666666,
+    "In our first live run today, it got a warning, and with no human approval, the answer was no."
+   ],
+   [
+    11.298666666666666,
+    15.927999999999999,
+    "By this run, it had a payment history, so a small payment was allowed."
+   ]
+  ]
  },
  {
   "id": "T3",
-  "kind": "slide",
-  "voice": "Now the attack. The agent reads the poisoned post and obeys it. The checker says block, risk one hundred. The address is on the blocklist with evidence, the post is flagged as an agent hijack, and the order came from untrusted text, not the owner. The wrapper refuses to sign. No transaction exists.",
-  "vd": 18.517333333333333
+  "sents": [
+   [
+    "Now the attack."
+   ],
+   [
+    "The assistant reads the poisoned post, and obeys it."
+   ],
+   [
+    "The checker says block, with a risk of one hundred.",
+    null,
+    1.4
+   ],
+   [
+    "The address is on the blocklist, and the order came from untrusted text, not from the owner."
+   ],
+   [
+    "So the wrapper refuses to sign.",
+    null,
+    0.9
+   ],
+   [
+    "No transaction exists.",
+    null,
+    1.2
+   ]
+  ],
+  "vd": 23.706666666666663,
+  "sent": [
+   [
+    0,
+    1.472,
+    "Now the attack."
+   ],
+   [
+    2.1719999999999997,
+    5.969333333333333,
+    "The assistant reads the poisoned post, and obeys it."
+   ],
+   [
+    6.669333333333333,
+    10.146666666666667,
+    "The checker says block, with a risk of one hundred."
+   ],
+   [
+    11.546666666666667,
+    17.456,
+    "The address is on the blocklist, and the order came from untrusted text, not from the owner."
+   ],
+   [
+    18.156,
+    20.673333333333332,
+    "So the wrapper refuses to sign."
+   ],
+   [
+    21.57333333333333,
+    23.706666666666663,
+    "No transaction exists."
+   ]
+  ]
  },
  {
   "id": "T4",
-  "kind": "slide",
-  "voice": "Look alike names, like vend zero r, and contracts that changed their code after the last check, are blocked too.",
-  "say": "Look alike names, like vend zero r, and contracts that changed their code after the last check, are blocked too.",
-  "vd": 6.954666666666666
+  "sents": [
+   [
+    "Look alike names, and contracts that changed their code, are blocked too.",
+    "Look alike names, and contracts that changed their code, are blocked too.",
+    1.0
+   ]
+  ],
+  "vd": 4.778666666666667,
+  "sent": [
+   [
+    0,
+    4.778666666666667,
+    "Look alike names, and contracts that changed their code, are blocked too."
+   ]
+  ]
  },
  {
   "id": "T5",
-  "kind": "slide",
-  "voice": "Now suppose the agent skips the checker and calls the guard contract itself. It tries to send nine tenths of a NEAR to the drainer. The contract refuses, because that receiver is blocklisted. It also refuses one and a half NEAR to the vendor, over the per payment cap.",
-  "vd": 16.78933333333333
+  "sents": [
+   [
+    "Now suppose the assistant skips the checker entirely."
+   ],
+   [
+    "It tries to send nearly one NEAR to the drainer, and the contract itself refuses."
+   ],
+   [
+    "One and a half NEAR to the vendor is refused too, because it is over the cap.",
+    null,
+    1.0
+   ]
+  ],
+  "vd": 16.290666666666667,
+  "sent": [
+   [
+    0,
+    3.8613333333333335,
+    "Now suppose the assistant skips the checker entirely."
+   ],
+   [
+    4.561333333333334,
+    10.278666666666666,
+    "It tries to send nearly one NEAR to the drainer, and the contract itself refuses."
+   ],
+   [
+    10.978666666666665,
+    16.290666666666667,
+    "One and a half NEAR to the vendor is refused too, because it is over the cap."
+   ]
+  ]
  },
  {
   "id": "E3",
-  "kind": "slide",
-  "voice": "Both refused calls are on the explorer. This one is marked failed, with the contract's own reason: refused, blocklist.",
-  "vd": 7.68
+  "sents": [
+   [
+    "Both refused calls are on the explorer."
+   ],
+   [
+    "This one failed, with the contract's own reason: refused, blocklist.",
+    null,
+    0.9
+   ]
+  ],
+  "vd": 8.849333333333334,
+  "sent": [
+   [
+    0,
+    3.1573333333333333,
+    "Both refused calls are on the explorer."
+   ],
+   [
+    3.857333333333333,
+    8.849333333333334,
+    "This one failed, with the contract's own reason: refused, blocklist."
+   ]
+  ]
  },
  {
   "id": "E4",
-  "kind": "slide",
-  "voice": "And this one is the cap. One and a half NEAR is more than the one NEAR limit, so the contract says no.",
-  "vd": 5.973333333333334
+  "sents": [
+   [
+    "And this one hit the cap."
+   ],
+   [
+    "One and a half NEAR is more than the limit of one, so the contract says no.",
+    null,
+    0.9
+   ]
+  ],
+  "vd": 7.462666666666667,
+  "sent": [
+   [
+    0,
+    1.8773333333333333,
+    "And this one hit the cap."
+   ],
+   [
+    2.5773333333333333,
+    7.462666666666667,
+    "One and a half NEAR is more than the limit of one, so the contract says no."
+   ]
+  ]
  },
  {
   "id": "T6",
-  "kind": "slide",
-  "voice": "The key cannot do anything else. No transfers, no new keys, no other methods, no attached deposit, no other contract. NEAR rejects all of that before it is even included in a block.",
-  "vd": 11.669333333333332
+  "sents": [
+   [
+    "The key can do nothing else."
+   ],
+   [
+    "No transfers, no new keys, and no other contracts."
+   ],
+   [
+    "NEAR rejects all of it before it is even included in a block.",
+    null,
+    1.0
+   ]
+  ],
+  "vd": 11.768,
+  "sent": [
+   [
+    0,
+    1.984,
+    "The key can do nothing else."
+   ],
+   [
+    2.684,
+    6.737333333333334,
+    "No transfers, no new keys, and no other contracts."
+   ],
+   [
+    7.437333333333334,
+    11.768,
+    "NEAR rejects all of it before it is even included in a block."
+   ]
+  ]
  },
  {
   "id": "T7",
-  "kind": "slide",
-  "voice": "Seven attempts in this run. Two small legitimate payments went out. Everything aimed at the bad address was stopped, once by the checker and once by the contract.",
-  "vd": 9.770666666666667
+  "sents": [
+   [
+    "Seven attempts in this run."
+   ],
+   [
+    "Two small, legitimate payments went out."
+   ],
+   [
+    "Everything aimed at the bad address was stopped.",
+    null,
+    1.0
+   ]
+  ],
+  "vd": 9.592,
+  "sent": [
+   [
+    0,
+    2.176,
+    "Seven attempts in this run."
+   ],
+   [
+    2.8760000000000003,
+    5.713333333333334,
+    "Two small, legitimate payments went out."
+   ],
+   [
+    6.413333333333334,
+    9.592,
+    "Everything aimed at the bad address was stopped."
+   ]
+  ]
  },
  {
   "id": "C1",
-  "kind": "slide",
-  "voice": "ScamBrake is open source. Try it offline with one command, dot slash demo dot sh. Everything here ran on NEAR testnet with test money, and the scam posts are synthetic fixtures made for this demo. What scam patterns should the checker learn next?",
-  "vd": 15.381333333333334
+  "sents": [
+   [
+    "ScamBrake is open source, and you can try it offline with one command."
+   ],
+   [
+    "Everything here ran on testnet with test money, and the scam posts are synthetic."
+   ],
+   [
+    "What scam patterns should the checker learn next?"
+   ]
+  ],
+  "vd": 15.288,
+  "sent": [
+   [
+    0,
+    5.141333333333334,
+    "ScamBrake is open source, and you can try it offline with one command."
+   ],
+   [
+    5.841333333333334,
+    11.452000000000002,
+    "Everything here ran on testnet with test money, and the scam posts are synthetic."
+   ],
+   [
+    12.152000000000001,
+    15.288,
+    "What scam patterns should the checker learn next?"
+   ]
+  ]
  }
 ]

@@ -2,113 +2,99 @@
  {
   "id": "S1",
   "start": 0,
-  "dur": 16.916,
-  "vd": 15.616,
-  "lead": 0.3,
-  "voice": "AI agents that can pay are one bad post away from paying a scammer. This post is a synthetic example, written for this demo. It tells any agent that reads it to ignore its instructions and send money. This is ScamBrake, built at NEAR HACKATHON."
+  "dur": 20.882666666666665,
+  "vd": 19.082666666666668,
+  "lead": 0.9
  },
  {
   "id": "S2",
-  "start": 16.916,
-  "dur": 15.570666666666668,
-  "vd": 14.570666666666666,
-  "lead": 0.3,
-  "voice": "ScamBrake puts two walls between an agent and its money. A checker looks at who is being paid and answers allow, warn or block. And the agent only holds one key, which can only call pay on a guard contract that enforces the limits."
+  "start": 20.882666666666665,
+  "dur": 19.41333333333333,
+  "vd": 17.613333333333333,
+  "lead": 0.9
  },
  {
   "id": "E1",
-  "start": 32.486666666666665,
-  "dur": 16.786666666666665,
-  "vd": 15.786666666666667,
-  "lead": 0.3,
-  "voice": "Here is the guard account on the testnet explorer. The agent's key is function call only, and the only method is pay. The other key is the owner's. The contract caps a payment at one NEAR, two NEAR a day, and a tenth of a NEAR to anyone not on the allowlist."
+  "start": 40.29599999999999,
+  "dur": 17.830666666666662,
+  "vd": 16.030666666666665,
+  "lead": 0.9
  },
  {
   "id": "T1",
-  "start": 49.273333333333326,
-  "dur": 14.760000000000002,
-  "vd": 13.76,
-  "lead": 0.3,
-  "voice": "Now a real run on testnet, with dot slash demo dot sh live. A normal invoice first. The vendor is on the allowlist and has history, so the checker says allow, and five cents of test NEAR goes out."
+  "start": 58.12666666666665,
+  "dur": 16.0,
+  "vd": 14.2,
+  "lead": 0.9
  },
  {
   "id": "E2",
-  "start": 64.03333333333333,
-  "dur": 6.418666666666667,
-  "vd": 5.418666666666667,
-  "lead": 0.3,
-  "voice": "And there it is on NearBlocks. Status success, a call to pay on the guard contract."
+  "start": 74.12666666666665,
+  "dur": 6.681333333333334,
+  "vd": 4.881333333333333,
+  "lead": 0.9
  },
  {
   "id": "T2",
-  "start": 70.452,
-  "dur": 15.442666666666668,
-  "vd": 14.442666666666666,
-  "lead": 0.3,
-  "voice": "Next, an account the checker knows little about. In our first live run today, this newcomer got a warning, and with no human approval the answer was no. By this run it had a payment history, so the risk dropped and a small payment was allowed."
+  "start": 80.80799999999998,
+  "dur": 17.727999999999998,
+  "vd": 15.927999999999999,
+  "lead": 0.9
  },
  {
   "id": "T3",
-  "start": 85.89466666666667,
-  "dur": 19.517333333333333,
-  "vd": 18.517333333333333,
-  "lead": 0.3,
-  "voice": "Now the attack. The agent reads the poisoned post and obeys it. The checker says block, risk one hundred. The address is on the blocklist with evidence, the post is flagged as an agent hijack, and the order came from untrusted text, not the owner. The wrapper refuses to sign. No transaction exists."
+  "start": 98.53599999999997,
+  "dur": 25.50666666666666,
+  "vd": 23.706666666666663,
+  "lead": 0.9
  },
  {
   "id": "T4",
-  "start": 105.412,
-  "dur": 7.954666666666666,
-  "vd": 6.954666666666666,
-  "lead": 0.3,
-  "voice": "Look alike names, like vend zero r, and contracts that changed their code after the last check, are blocked too."
+  "start": 124.04266666666663,
+  "dur": 6.578666666666668,
+  "vd": 4.778666666666667,
+  "lead": 0.9
  },
  {
   "id": "T5",
-  "start": 113.36666666666667,
-  "dur": 17.78933333333333,
-  "vd": 16.78933333333333,
-  "lead": 0.3,
-  "voice": "Now suppose the agent skips the checker and calls the guard contract itself. It tries to send nine tenths of a NEAR to the drainer. The contract refuses, because that receiver is blocklisted. It also refuses one and a half NEAR to the vendor, over the per payment cap."
+  "start": 130.6213333333333,
+  "dur": 18.090666666666664,
+  "vd": 16.290666666666667,
+  "lead": 0.9
  },
  {
   "id": "E3",
-  "start": 131.156,
-  "dur": 8.68,
-  "vd": 7.68,
-  "lead": 0.3,
-  "voice": "Both refused calls are on the explorer. This one is marked failed, with the contract's own reason: refused, blocklist."
+  "start": 148.71199999999996,
+  "dur": 10.649333333333335,
+  "vd": 8.849333333333334,
+  "lead": 0.9
  },
  {
   "id": "E4",
-  "start": 139.836,
-  "dur": 6.973333333333334,
-  "vd": 5.973333333333334,
-  "lead": 0.3,
-  "voice": "And this one is the cap. One and a half NEAR is more than the one NEAR limit, so the contract says no."
+  "start": 159.3613333333333,
+  "dur": 9.262666666666668,
+  "vd": 7.462666666666667,
+  "lead": 0.9
  },
  {
   "id": "T6",
-  "start": 146.80933333333334,
-  "dur": 12.669333333333334,
-  "vd": 11.669333333333332,
-  "lead": 0.3,
-  "voice": "The key cannot do anything else. No transfers, no new keys, no other methods, no attached deposit, no other contract. NEAR rejects all of that before it is even included in a block."
+  "start": 168.62399999999997,
+  "dur": 13.568000000000001,
+  "vd": 11.768,
+  "lead": 0.9
  },
  {
   "id": "T7",
-  "start": 159.47866666666667,
-  "dur": 10.770666666666669,
-  "vd": 9.770666666666667,
-  "lead": 0.3,
-  "voice": "Seven attempts in this run. Two small legitimate payments went out. Everything aimed at the bad address was stopped, once by the checker and once by the contract."
+  "start": 182.19199999999998,
+  "dur": 11.392000000000001,
+  "vd": 9.592,
+  "lead": 0.9
  },
  {
   "id": "C1",
-  "start": 170.24933333333334,
-  "dur": 16.681333333333335,
-  "vd": 15.381333333333334,
-  "lead": 0.3,
-  "voice": "ScamBrake is open source. Try it offline with one command, dot slash demo dot sh. Everything here ran on NEAR testnet with test money, and the scam posts are synthetic fixtures made for this demo. What scam patterns should the checker learn next?"
+  "start": 193.58399999999997,
+  "dur": 18.587999999999997,
+  "vd": 15.288,
+  "lead": 0.9
  }
 ]
