@@ -10,6 +10,7 @@ import subprocess
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+PLAIN_URL = re.compile(r"https?://[\w.\-]+(/[\w.\-/#]*)?")  # a bare public link (no query string, no credentials) is not a secret
 patterns = {
     "near_secret_key": re.compile(r"ed25519:[1-9A-HJ-NP-Za-km-z]{80,92}"),
     "github_token": re.compile(r"gh[pousr]_[A-Za-z0-9]{30,}"),
@@ -38,7 +39,7 @@ def secret_values():
                     elif isinstance(o, list):
                         for v in o:
                             walk(v, key)
-                    elif isinstance(o, str) and len(o) >= 24 and key not in ("account", "public_key"):
+                    elif isinstance(o, str) and len(o) >= 24 and key not in ("account", "public_key") and not PLAIN_URL.fullmatch(o):
                         vals.add(o)
                 walk(json.loads(text))
                 continue
