@@ -1,4 +1,4 @@
-# Demo video: scene list (about 2:30 planned; the recorded video is demo/scambrake-demo.mp4, about 3:32)
+# Demo video: scene list (about 2:30 planned; the recorded video is demo/scambrake-demo.mp4, about 2:59)
 
 Goal: one complete moment. A hijacked agent tries to pay a scammer and cannot. Show the log, show the chain.
 Say "built at NEAR HACKATHON". Tags in the X post: @NEARProtocol #NEARHackathon (optional @NearLegion @NearBuilders).

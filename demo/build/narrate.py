@@ -1,17 +1,26 @@
-import os;os.environ['OMP_NUM_THREADS']='6'
-import json,pathlib,numpy as np,soundfile as sf
-from kokoro_onnx import Kokoro
+# Voice matched to the posted OddsHedge demo: edge-tts en-US-AndrewNeural, rate +4%, one request per scene (native sentence pauses)
+import asyncio,json,pathlib,subprocess,edge_tts
 P=pathlib.Path(__file__).parent;(P/'vo').mkdir(exist_ok=True)
-SPEED=0.93;GAP=0.7
-k=Kokoro('/workspace/voice-models/kokoro/kokoro-v1.0.onnx','/workspace/voice-models/kokoro/voices-v1.0.bin')
-sc=json.loads((P/'script.json').read_text());tot=0
-for s in sc:
-  parts=[];t=0;sent=[];sr=24000
-  for i,x in enumerate(s['sents']):
-    cap=x[0];say=(x[1] if len(x)>1 and x[1] else cap);after=x[2] if len(x)>2 and x[2] else GAP
-    a,sr=k.create(say,voice='bm_george',speed=SPEED,lang='en-gb')
-    sent.append([t,t+len(a)/sr,cap]);parts.append(a);t+=len(a)/sr
-    if i<len(s['sents'])-1:parts.append(np.zeros(int(after*sr),dtype=a.dtype));t+=after
-  sf.write(P/'vo'/f"{s['id']}.wav",np.concatenate(parts),sr)
-  s['vd']=t;s['sent']=sent;tot+=t;print(s['id'],round(t,2),flush=True)
-(P/'script_timed.json').write_text(json.dumps(sc,indent=1));print('voice total',round(tot,1))
+VOICE='en-US-AndrewNeural';RATE='+4%'
+sc=json.loads((P/'script.json').read_text())
+def dur(f):return float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f],capture_output=True,text=True).stdout)
+async def one(s):
+  for k in range(6):
+    try:
+      c=edge_tts.Communicate(s['say'],VOICE,rate=RATE,boundary='SentenceBoundary');aud=bytearray();bd=[]
+      async for m in c.stream():
+        if m['type']=='audio':aud+=m['data']
+        elif m['type']=='SentenceBoundary':bd.append((m['offset']/1e7,(m['offset']+m['duration'])/1e7,m['text']))
+      if not aud:raise RuntimeError('no audio')
+      return bytes(aud),bd
+    except Exception as e:
+      print('retry',s['id'],e,flush=True);await asyncio.sleep(2)
+  raise SystemExit('failed '+s['id'])
+async def main():
+  tot=0
+  for s in sc:
+    aud,bd=await one(s);mp3=P/'vo'/f"{s['id']}.mp3";mp3.write_bytes(aud)
+    subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(mp3),'-ar','44100','-ac','1',str(P/'vo'/f"{s['id']}.wav")],check=True)
+    s['vd']=dur(str(mp3));s['sent']=[list(b) for b in bd];tot+=s['vd'];print(s['id'],round(s['vd'],2),len(bd),flush=True)
+  (P/'script_timed.json').write_text(json.dumps(sc,indent=1));print('voice total',round(tot,1))
+asyncio.run(main())
