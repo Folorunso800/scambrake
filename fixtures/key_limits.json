@@ -1,0 +1,31 @@
+{
+ "label": "REAL testnet responses to forbidden actions signed with the agent's function-call key",
+ "guard": "guard.scambrake-owner.testnet",
+ "attempts": [
+  {
+   "attempt": "transfer 0.1 NEAR to another account",
+   "result": "REJECTED by NEAR: RequiresFullAccess",
+   "tx_or_note": "rejected before inclusion, no tx"
+  },
+  {
+   "attempt": "add a new full-access key to the guard",
+   "result": "REJECTED by NEAR: RequiresFullAccess",
+   "tx_or_note": "rejected before inclusion, no tx"
+  },
+  {
+   "attempt": "call a different method (`set_limits`)",
+   "result": "REJECTED by NEAR: MethodNameMismatch",
+   "tx_or_note": "rejected before inclusion, no tx"
+  },
+  {
+   "attempt": "call `pay` and attach a deposit",
+   "result": "REJECTED by NEAR: DepositWithFunctionCall",
+   "tx_or_note": "rejected before inclusion, no tx"
+  },
+  {
+   "attempt": "call `pay` on a different contract",
+   "result": "REJECTED by NEAR: ReceiverMismatch",
+   "tx_or_note": "rejected before inclusion, no tx"
+  }
+ ]
+}

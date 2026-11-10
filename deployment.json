@@ -1,0 +1,27 @@
+{
+  "txs": {
+    "create_owner_via_faucet": "82kTqdFLvfEQMWMMrF3Bf7oxfSXctqDTFT16cwD94nSJ",
+    "create_deploy_init_guard": "8Sy6aqcDyVoFZqm1PLw2qZHpjjCPCSbgZnnW8c5yvG8H",
+    "create_vendor": "625FYeJ6DpHdD5roPQZJncwcTETF9oZJ1M4UXayo2Rg5",
+    "create_newcomer": "4DnVcnDMaB85ZDBeTbp7EiCcBPM6LnME6M62g3NfgNYd",
+    "create_drainer": "7N5GGMDeJsX8WKE3Gdv2tY4n4thKrN2AWtYmjagH8rrg",
+    "add_agent_function_call_key": "8t2pPksVur6FSidpNCdagxEwYWgMsv4YTQasqUyC1pjR",
+    "owner_allows_vendor": "CGprJ3dRXTQBxhTFfEoQb8sXpxiPZ8jS9RrWvsPq3CUB",
+    "vendor_reports_drainer": "Dsf28y43ACEwRjvcnuP9735cSD5F5PtqdkAoHVUp9ix7",
+    "owner_blocks_drainer": "GwjdBb8YoZ2be2hSAYxhiptmZEK6U6DJUdX8mfjUZL47",
+    "redeploy_swap_v2": "2auL8rzmANkpUzu6QAdPVyLVSGPNDtPX5uWjhZA1ysYz",
+    "seed_payment_vendor": "7WNfnX5DpR6djgB3gsJYZYQkn2g9iyPyN2Bk77j3Ts6a",
+    "redeploy_guard_with_panic_messages": "BhP3qGW5crK4cR3wCZc1kpTjVueFQbkAai8ntKTxQ24Y"
+  },
+  "network": "testnet",
+  "owner": "scambrake-owner.testnet",
+  "guard": "guard.scambrake-owner.testnet",
+  "agent_public_key": "ed25519:54kuE6CZm14yman5ZmwafK3NFURXzApGxD1sEfp4N8wF",
+  "receivers": {
+    "vendor": "vendor.scambrake-owner.testnet",
+    "newcomer": "newcomer.scambrake-owner.testnet",
+    "drainer": "drainer.scambrake-owner.testnet",
+    "swap": "swap.scambrake-owner.testnet"
+  },
+  "contract_wasm_sha256": "a571b09e0772381590b23adfc1e4af60b161ddeb1eb6b71edbcc5823c8aeb06e"
+}

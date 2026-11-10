@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+/state/
+deployment.local.json
+contract/target/
+*.env
+.env*
+keys.json
+.secrets/

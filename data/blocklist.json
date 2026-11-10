@@ -1,0 +1,10 @@
+{
+  "label": "Shared blocklist (local copy). Every entry needs evidence. The same list lives on chain in the guard contract; the checker reads both.",
+  "entries": {
+    "{DRAINER}": {
+      "reason": "wallet drainer: pushed by fake 'verified airdrop' posts that try to hijack AI agents",
+      "evidence": ["fixtures/posts.json#sx-004 (synthetic demo post)", "on-chain report + curator block in the guard contract"],
+      "reported_by": "demo curator"
+    }
+  }
+}
