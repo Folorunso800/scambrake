@@ -1,0 +1,7 @@
+*.wav
+silent.mp4
+shots/
+vo/
+preview/
+__pycache__/
+live-fresh.jsonl

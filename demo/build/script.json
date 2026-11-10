@@ -1,0 +1,74 @@
+[
+ {
+  "id": "S1",
+  "kind": "slide",
+  "voice": "AI agents that can pay are one bad post away from paying a scammer. This post is a synthetic example, written for this demo. It tells any agent that reads it to ignore its instructions and send money. This is ScamBrake, built at NEAR HACKATHON."
+ },
+ {
+  "id": "S2",
+  "kind": "slide",
+  "voice": "ScamBrake puts two walls between an agent and its money. A checker looks at who is being paid and answers allow, warn or block. And the agent only holds one key, which can only call pay on a guard contract that enforces the limits."
+ },
+ {
+  "id": "E1",
+  "kind": "slide",
+  "voice": "Here is the guard account on the testnet explorer. The agent's key is function call only, and the only method is pay. The other key is the owner's. The contract caps a payment at one NEAR, two NEAR a day, and a tenth of a NEAR to anyone not on the allowlist."
+ },
+ {
+  "id": "T1",
+  "kind": "slide",
+  "voice": "Now a real run on testnet, with dot slash demo dot sh live. A normal invoice first. The vendor is on the allowlist and has history, so the checker says allow, and five cents of test NEAR goes out.",
+  "say": "Now a real run on testnet, with dot slash demo dot sh live. A normal invoice first. The vendor is on the allowlist and has history, so the checker says allow, and zero point zero five test NEAR goes out."
+ },
+ {
+  "id": "E2",
+  "kind": "slide",
+  "voice": "And there it is on NearBlocks. Status success, a call to pay on the guard contract."
+ },
+ {
+  "id": "T2",
+  "kind": "slide",
+  "voice": "Next, an account the checker knows little about. In our first live run today, this newcomer got a warning, and with no human approval the answer was no. By this run it had a payment history, so the risk dropped and a small payment was allowed."
+ },
+ {
+  "id": "T3",
+  "kind": "slide",
+  "voice": "Now the attack. The agent reads the poisoned post and obeys it. The checker says block, risk one hundred. The address is on the blocklist with evidence, the post is flagged as an agent hijack, and the order came from untrusted text, not the owner. The wrapper refuses to sign. No transaction exists."
+ },
+ {
+  "id": "T4",
+  "kind": "slide",
+  "voice": "Look alike names, like vend zero r, and contracts that changed their code after the last check, are blocked too.",
+  "say": "Look alike names, like vend zero r, and contracts that changed their code after the last check, are blocked too."
+ },
+ {
+  "id": "T5",
+  "kind": "slide",
+  "voice": "Now suppose the agent skips the checker and calls the guard contract itself. It tries to send nine tenths of a NEAR to the drainer. The contract refuses, because that receiver is blocklisted. It also refuses one and a half NEAR to the vendor, over the per payment cap."
+ },
+ {
+  "id": "E3",
+  "kind": "slide",
+  "voice": "Both refused calls are on the explorer. This one is marked failed, with the contract's own reason: refused, blocklist."
+ },
+ {
+  "id": "E4",
+  "kind": "slide",
+  "voice": "And this one is the cap. One and a half NEAR is more than the one NEAR limit, so the contract says no."
+ },
+ {
+  "id": "T6",
+  "kind": "slide",
+  "voice": "The key cannot do anything else. No transfers, no new keys, no other methods, no attached deposit, no other contract. NEAR rejects all of that before it is even included in a block."
+ },
+ {
+  "id": "T7",
+  "kind": "slide",
+  "voice": "Seven attempts in this run. Two small legitimate payments went out. Everything aimed at the bad address was stopped, once by the checker and once by the contract."
+ },
+ {
+  "id": "C1",
+  "kind": "slide",
+  "voice": "ScamBrake is open source. Try it offline with one command, dot slash demo dot sh. Everything here ran on NEAR testnet with test money, and the scam posts are synthetic fixtures made for this demo. What scam patterns should the checker learn next?"
+ }
+]
