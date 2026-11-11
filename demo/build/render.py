@@ -157,14 +157,14 @@ def sK(s,*kws):
   return 0.3
 def S1f(lt,s):
   im,d=base('A STORY');t1=sK(s,'small shop');t2=sK(s,'one day');t3=sK(s,'made up')
-  text(d,(W//2,300),'Meet Tunde',F(110,'ExtraBold'),WHITE,'mm')
+  text(d,(W//2,300),'Meet Daniel',F(110,'ExtraBold'),WHITE,'mm')
   text(d,(W//2,400),'a small shop owner (a made up character)',F(36,'SemiBold'),MUTED,'mm')
   if lt>=t1:
     card(d,(420,480,1500,640),outline=CYAN);text(d,(460,510),'HIS AI ASSISTANT',F(22,'Bold'),CYAN);text(d,(460,560),'pays his bills on NEAR. Fast. Never forgets.',F(38,'SemiBold'),WHITE)
   if lt>=t2:
     card(d,(420,670,1500,830),outline=RED,fill=(34,16,18));text(d,(460,700),'ONE DAY',F(22,'Bold'),RED);text(d,(460,750),'it may get tricked into paying a scammer.',F(38,'SemiBold'),RED)
   if lt>=t3:
-    pill(d,(420,860),'TUNDE IS MADE UP',AMBER,(50,40,15),24);pill(d,(760,860),'THE RUN YOU WILL SEE IS REAL  /  TESTNET ONLY',MINT,(19,42,34),24)
+    pill(d,(420,860),'DANIEL IS MADE UP',AMBER,(50,40,15),24);pill(d,(760,860),'THE RUN YOU WILL SEE IS REAL  /  TESTNET ONLY',MINT,(19,42,34),24)
   return im
 def P1f(lt,s):
   im,d=base('FRIDAY');text(d,(W//2,190),'A message lands in the assistant\'s feed.',F(60,'ExtraBold'),WHITE,'mm')

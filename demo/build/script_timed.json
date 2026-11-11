@@ -1,77 +1,77 @@
 [
  {
   "id": "S1",
-  "say": "Meet Tunde. He runs a small shop, and an AI assistant pays his bills. It is fast. It never forgets. But one day, your AI assistant may get tricked into sending money to a scammer. Tunde is made up. What happens next is real, on testnet.",
-  "vd": 15.336,
+  "say": "Meet Daniel. He runs a small shop, and an AI assistant pays his bills. It is fast. It never forgets. But one day, your AI assistant may get tricked into sending money to a scammer. Daniel is made up. What happens next is real, on testnet.",
+  "vd": 15.528,
   "sent": [
    [
     0.05,
-    0.9615384,
-    "Meet Tunde."
+    1.0216346,
+    "Meet Daniel."
    ],
    [
-    0.9615384,
-    4.6514423,
+    1.0216346,
+    4.7115385,
     "He runs a small shop, and an AI assistant pays his bills."
    ],
    [
-    4.6514424,
-    5.7572116,
+    4.7115386,
+    5.8173078,
     "It is fast."
    ],
    [
-    5.7572117,
-    7.0312502,
+    5.8173079,
+    7.0913464,
     "It never forgets."
    ],
    [
-    7.0312502,
-    11.6826926,
+    7.0913464,
+    11.7427888,
     "But one day, your AI assistant may get tricked into sending money to a scammer."
    ],
    [
-    11.6826927,
-    12.740385,
-    "Tunde is made up."
+    11.7427888,
+    12.9447119,
+    "Daniel is made up."
    ],
    [
-    12.740385,
-    15.288462,
+    12.944712,
+    15.492789,
     "What happens next is real, on testnet."
    ]
   ]
  },
  {
   "id": "S2",
-  "say": "So before that day comes, Tunde sets up ScamBrake. It gives his assistant a checker, that looks at who is being paid. And it gives the assistant just one key. That key can only call pay, within strict limits.",
-  "vd": 11.904,
+  "say": "So before that day comes, Daniel sets up ScamBrake. It gives his assistant a checker, that looks at who is being paid. And it gives the assistant just one key. That key can only call pay, within strict limits.",
+  "vd": 11.976,
   "sent": [
    [
     0.05,
-    3.0528847,
-    "So before that day comes, Tunde sets up ScamBrake."
+    3.1370193,
+    "So before that day comes, Daniel sets up ScamBrake."
    ],
    [
-    3.0528847,
-    6.4423079,
+    3.1370193,
+    6.5264425,
     "It gives his assistant a checker, that looks at who is being paid."
    ],
    [
-    6.4423079,
-    8.7019233,
+    6.5264425,
+    8.7860579,
     "And it gives the assistant just one key."
    ],
    [
-    8.7019233,
-    11.8509618,
+    8.786058,
+    11.9350965,
     "That key can only call pay, within strict limits."
    ]
   ]
  },
  {
   "id": "E1",
-  "say": "Here is that key on the NEAR explorer. Pay only. The other key is Tunde's own. Every payment is capped at one NEAR, and two NEAR a day.",
-  "vd": 8.352,
+  "say": "Here is that key on the NEAR explorer. Pay only. The other key is Daniel's own. Every payment is capped at one NEAR, and two NEAR a day.",
+  "vd": 8.496,
   "sent": [
    [
     0.05,
@@ -85,12 +85,12 @@
    ],
    [
     3.0528847,
-    4.9158655,
-    "The other key is Tunde's own."
+    5.048077,
+    "The other key is Daniel's own."
    ],
    [
-    4.9158655,
-    8.3052887,
+    5.0480771,
+    8.4375003,
     "Every payment is capped at one NEAR, and two NEAR a day."
    ]
   ]
@@ -139,8 +139,8 @@
  },
  {
   "id": "T3",
-  "say": "The assistant reads it. And it believes it. It tries to pay the scammer. ScamBrake steps in. Block. Risk, one hundred out of one hundred. The address is on the blocklist, and the order came from a post, not from Tunde. The wrapper refuses to sign. No transaction exists. Tunde's money never moved.",
-  "vd": 18.168,
+  "say": "The assistant reads it. And it believes it. It tries to pay the scammer. ScamBrake steps in. Block. Risk, one hundred out of one hundred. The address is on the blocklist, and the order came from a post, not from Daniel. The wrapper refuses to sign. No transaction exists. Daniel's money never moved.",
+  "vd": 18.384,
   "sent": [
    [
     0.05,
@@ -174,23 +174,23 @@
    ],
    [
     8.2451926,
-    12.944712,
-    "The address is on the blocklist, and the order came from a post, not from Tunde."
+    12.9927889,
+    "The address is on the blocklist, and the order came from a post, not from Daniel."
    ],
    [
-    12.944712,
-    14.7836543,
+    12.9927889,
+    14.8317312,
     "The wrapper refuses to sign."
    ],
    [
-    14.7836543,
-    16.5625005,
+    14.8317313,
+    16.6105775,
     "No transaction exists."
    ],
    [
-    16.5625006,
-    18.1129814,
-    "Tunde's money never moved."
+    16.6105775,
+    18.353366,
+    "Daniel's money never moved."
    ]
   ]
  },
@@ -218,30 +218,30 @@
  },
  {
   "id": "T1",
-  "say": "And Tunde's real vendor? Still gets paid. The vendor is trusted, so the checker says allow, and the payment goes out.",
-  "vd": 6.768,
+  "say": "And Daniel's real vendor? Still gets paid. The vendor is trusted, so the checker says allow, and the payment goes out.",
+  "vd": 6.84,
   "sent": [
    [
     0.05,
-    1.3461538,
-    "And Tunde's real vendor?"
+    1.4182692,
+    "And Daniel's real vendor?"
    ],
    [
-    1.3461538,
-    2.4399038,
+    1.4182692,
+    2.5120192,
     "Still gets paid."
    ],
    [
-    2.4399039,
-    6.7067309,
+    2.5120193,
+    6.7788463,
     "The vendor is trusted, so the checker says allow, and the payment goes out."
    ]
   ]
  },
  {
   "id": "E2",
-  "say": "There it is on NearBlocks. Success. Tunde did not have to do a thing.",
-  "vd": 4.176,
+  "say": "There it is on NearBlocks. Success. Daniel did not have to do a thing.",
+  "vd": 4.296,
   "sent": [
    [
     0.05,
@@ -255,8 +255,8 @@
    ],
    [
     2.4759616,
-    4.1225962,
-    "Tunde did not have to do a thing."
+    4.2307693,
+    "Daniel did not have to do a thing."
    ]
   ]
  },
@@ -429,37 +429,37 @@
  },
  {
   "id": "C1",
-  "say": "So Tunde sleeps well tonight. His bills got paid, and his money stayed his. ScamBrake is open source. Try it offline with one command. Everything here ran on testnet, with test money. What scam patterns should it learn next?",
-  "vd": 13.704,
+  "say": "So Daniel sleeps well tonight. His bills got paid, and his money stayed his. ScamBrake is open source. Try it offline with one command. Everything here ran on testnet, with test money. What scam patterns should it learn next?",
+  "vd": 13.824,
   "sent": [
    [
     0.05,
-    1.6706731,
-    "So Tunde sleeps well tonight."
+    1.8149039,
+    "So Daniel sleeps well tonight."
    ],
    [
-    1.6706731,
-    4.4951924,
+    1.8149039,
+    4.6394232,
     "His bills got paid, and his money stayed his."
    ],
    [
-    4.4951924,
-    6.5144232,
+    4.6394232,
+    6.658654,
     "ScamBrake is open source."
    ],
    [
-    6.5144233,
-    8.4615387,
+    6.658654,
+    8.6057694,
     "Try it offline with one command."
    ],
    [
-    8.4615387,
-    11.5024041,
+    8.6057695,
+    11.6466349,
     "Everything here ran on testnet, with test money."
    ],
    [
-    11.5024042,
-    13.6418273,
+    11.646635,
+    13.7860581,
     "What scam patterns should it learn next?"
    ]
   ]
